@@ -1,5 +1,3 @@
-const Item = () => {
-  return <div className='item-container'>Item</div>;
-};
+const Item = () => <div className="item-container">Item</div>;
 
 export default Item;

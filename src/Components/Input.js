@@ -1,9 +1,7 @@
-const Input = () => {
-  return (
-    <div>
-      <input />
-    </div>
-  );
-};
+const Input = () => (
+  <div>
+    <input />
+  </div>
+);
 
 export default Input;
