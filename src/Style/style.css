@@ -13,5 +13,70 @@
 }
 
 .todo-container {
-  border: 1px solid red;
+  border: 1px solid rgb(0, 0, 0);
+  width: 50%;
+  padding: 0.5rem;
+}
+
+/* Header */
+.todo-header {
+  /* border: 1px solid purple; */
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.todo-header h1 {
+  font-size: 70px;
+}
+
+.todo-header p {
+  font-size: 14px;
+}
+
+/* Input */
+.input-container {
+  /* border: 1px solid #ccc; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.input-container input {
+  outline: none;
+  padding: 0.5rem 0.2rem;
+  width: 100%;
+}
+
+.input-container img {
+  cursor: pointer;
+}
+
+/* Item */
+.item-container {
+  border: 2px solid rgb(201, 201, 201);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.item-container div {
+  display: flex;
+  justify-content: center;
+}
+
+.item-container div input {
+  margin-right: 0.5rem;
+}
+
+.item-content {
+  text-transform: capitalize;
+  font-family: monospace;
+}
+
+.item-container img {
+  cursor: pointer;
 }
