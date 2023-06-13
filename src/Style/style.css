@@ -15,3 +15,20 @@
 .todo-container {
   border: 1px solid red;
 }
+
+/* Header */
+.todo-header {
+  border: 1px solid purple;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.todo-header h1 {
+  font-size: 70px;
+}
+
+.todo-header p {
+  font-size: 14px;
+}
+
+/* Input */
