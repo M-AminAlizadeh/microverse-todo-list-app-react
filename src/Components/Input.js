@@ -34,6 +34,7 @@ const Input = () => {
       <input
         placeholder="Add your task ..."
         value={inputValue}
+        autoFocus
         onChange={(e) => {
           handleChange(e);
         }}
