@@ -1,23 +1,30 @@
 /*eslint-disable */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Input = () => {
   const [inputValue, setInputValue] = useState("");
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(() => {
+    return localStorage.getItem("Items")
+      ? JSON.parse(localStorage.getItem("Items"))
+      : [];
+  });
+  useEffect(() => {
+    localStorage.setItem("Items", JSON.stringify(items));
+  }, [items]);
+
   const handleChange = (e) => {
     setInputValue(e.target.value);
   };
-  // Add button
+
+  // Add item
   const handleClick = () => {
-    const newItems = items;
+    const newItems = [...items];
     newItems.push({
       id: Math.floor(Math.random() * 1000),
       content: inputValue,
-      checkStatus: true,
+      checkStatus: false,
     });
     setItems(newItems);
-    // Update localstorage
-    localStorage.setItem("Items", JSON.stringify(items));
     // Reset the input
     setInputValue("");
   };
