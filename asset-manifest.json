@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/microverse-todo-list-app-react/static/css/main.e8a0cc5d.css",
+    "main.js": "/microverse-todo-list-app-react/static/js/main.a53cc483.js",
+    "index.html": "/microverse-todo-list-app-react/index.html",
+    "main.e8a0cc5d.css.map": "/microverse-todo-list-app-react/static/css/main.e8a0cc5d.css.map",
+    "main.a53cc483.js.map": "/microverse-todo-list-app-react/static/js/main.a53cc483.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8a0cc5d.css",
+    "static/js/main.a53cc483.js"
+  ]
+}
